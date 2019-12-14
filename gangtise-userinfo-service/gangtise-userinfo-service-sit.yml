@@ -1,32 +1,37 @@
 server:
-  port: 10031
+  port: 10030
 spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysql-server:3306/gangtise_visitor?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: '{cipher}4710a597e15fcd19389c690af64dfbc40c35078d70a9be69fc5ba0432e335467'
-    initial-size: 10
-    max-active: 100
-    min-idle: 10
-    max-wait: 60000
-    pool-prepared-statements: true
-    max-pool-prepared-statement-per-connection-size: 20
-    time-between-eviction-runs-millis: 60000
-    min-evictable-idle-time-millis: 300000
-    validation-query: SELECT 1 FROM DUAL
-    test-while-idle: true
-    test-on-borrow: false
-    test-on-return: false
-    stat-view-servlet:
-      enabled: true
-      url-pattern: /druid/*
-    filter:
-      stat:
-        log-slow-sql: true
-        slow-sql-millis: 1000
-        merge-sql: true
-      wall:
-        config:
-          multi-statement-allow: true
+    datasource:
+#        druid:
+#          first:
+#            enabled: true
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/gangtise_user?useSSL=true&requireSSL=false&characterEncoding=UTF-8
+        username: gangtise@gangtisedb
+        password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-pool-prepared-statement-per-connection-size: 20
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 300000
+        validation-query: SELECT 1 FROM DUAL
+        test-while-idle: true
+        test-on-borrow: false
+        test-on-return: false
+        stat-view-servlet:
+            enabled: true
+            url-pattern: /druid/*
+            #login-username: admin
+            #login-password: admin
+        filter:
+            stat:
+                log-slow-sql: true
+                slow-sql-millis: 1000
+                merge-sql: true
+            wall:
+                config:
+                    multi-statement-allow: true
