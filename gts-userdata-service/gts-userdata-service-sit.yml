@@ -1,0 +1,24 @@
+server:
+  port: 12002  
+  
+spring:              
+    #mongo配置
+    data:
+      mongodb:
+        uri: mongodb://udv:123456@192.168.1.61:27017/user_data_visitor
+        #host: 192.168.1.61
+        #port: 27017 
+        #username: gangtise
+        #password: 123456
+        #database: user_data
+
+        
+task:
+    usersector:    
+        remainNum: 10
+    userquota:
+        remainNum: 10
+    userbrowser:
+        #1:按保留条数 2：按保留天数
+        flag: 1
+        remain: 100

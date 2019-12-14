@@ -1,0 +1,36 @@
+server:
+  port: 1926
+   
+
+ignore:
+  urls:
+    - /**/*.css
+    - /oauth/**
+    - /auth/oauth/**
+    - /actuator/**
+    - /hystrix/**
+    - /swagger-resource/**
+    - /swagger-ui.html/**
+    - /webjars/**
+    - /swagger-resources/**
+    - /v2/api-docs
+    - /favicon.ico
+    - /user/tbUserInfo/insert
+    - /user/tbUserInfo/userInsert
+    - /user/tbUserInfo/visitorInsert
+    - /userdata/**
+    - /subscripcenter/**
+    - /newscenter/**
+    - /fulltextsearch/**
+    - /keyboardsearch/**
+    - /info/**
+    - /dataconvert/**
+  status:
+    - /auth/oauth/token
+    - /userdata/basic
+    - /subscripcenter/kafkaCenter/createKafkaTopic
+    - /newscenter/article/queryArticleByCondition
+    - /fulltextsearch/secu/search/keysearch
+    - /fulltextsearch/sector/search/criteriaQuery
+    - /keyboardsearch/article/get
+    - /info/emailSendApi/hutoolsendEmail
