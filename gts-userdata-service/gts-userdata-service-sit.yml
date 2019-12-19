@@ -19,7 +19,7 @@ spring:
             max-wait-time: 120000
             max-connection-idle-time: 0
             max-connection-life-time: 0
-            connect-timeout: 10000
+            connect-timeout: 0
             socket-timeout: 0
             socket-keep-alive: false
             ssl-enabled: false
