@@ -21,7 +21,7 @@ spring:
             max-connection-life-time: 0
             connect-timeout: 0
             socket-timeout: 0
-            socket-keep-alive: false
+            socket-keep-alive: true
             ssl-enabled: false
             ssl-invalid-host-name-allowed: false
             always-use-m-beans: false
