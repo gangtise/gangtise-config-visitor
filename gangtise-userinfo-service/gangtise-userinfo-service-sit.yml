@@ -7,7 +7,7 @@ spring:
 #            enabled: true
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/gangtise_user?useSSL=true&requireSSL=false&characterEncoding=UTF-8
+    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/gangtise_visitor?useSSL=true&requireSSL=false&characterEncoding=UTF-8
     username: gangtise@gangtisedb
     password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
     initial-size: 10
