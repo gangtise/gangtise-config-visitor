@@ -35,5 +35,5 @@ spring:
         wall:
           config:
              multi-statement-allow: true
-  Gangtise:
-    userServiceIp: 10.0.2.7:1925
+Gangtise:
+  userServiceIp: 10.0.2.7:1925
