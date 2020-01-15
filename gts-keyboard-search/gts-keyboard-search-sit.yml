@@ -4,7 +4,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 139.217.216.24:9300, 40.73.115.201:9300, 40.73.74.114:9300
+      cluster-nodes: es1:9300, es2:9300, es3:9300
   
   thymeleaf:
     cache: false
