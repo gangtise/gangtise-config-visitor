@@ -30,6 +30,7 @@ ignore:
     - /info/**
     - /dataconvert/**
     - /quarkresponse/**
+    - /user/Mail/sendMail
 
   status:
     - /auth/oauth/token
