@@ -1,0 +1,22 @@
+server:
+  port: 13004
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: es1:9300, es2:9300, es3:9300
+  
+  thymeleaf:
+    cache: false
+    suffix: .html
+    mode: HTML
+    prefix: classpath:/templates/
+    encoding: UTF-8
+ 
+gangtise:
+  log:
+    flatfile:
+      path: /export/home/log
+      
+pagenumdefault: 0
+pagesizedefault: 20
