@@ -17,14 +17,21 @@ ignore:
     - /favicon.ico
     - /user/tbUserInfo/insert
     - /user/tbUserInfo/userInsert
+    - /user/tbUserInfo/hasUserAccount
     - /user/tbUserInfo/visitorInsert
+    - /user/tbUserInfo/userInsertByPassword
+    - /user/tbUserInfo/resetPasswordByUserAccount
+    - /user/tbUserInfo/visitorToUser
+    - /user/tbUserInfo/load/batch
     - /userdata/**
-    - /subscripcenter/**
     - /newscenter/**
     - /fulltextsearch/**
     - /keyboardsearch/**
     - /info/**
     - /dataconvert/**
+    - /quarkresponse/**
+    - /user/Mail/sendMail
+
   status:
     - /auth/oauth/token
     - /userdata/basic
@@ -34,3 +41,5 @@ ignore:
     - /fulltextsearch/sector/search/criteriaQuery
     - /keyboardsearch/article/get
     - /info/emailSendApi/hutoolsendEmail
+
+
